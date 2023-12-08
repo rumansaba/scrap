@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping Demo</title>
+</head>
+<body>
+    <h1>YouTube Data</h1>
+    <ul>
+        {% for title in youtube_data %}
+            <li>{{ title }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Amazon Data</h1>
+    <ul>
+        {% for name in amazon_data %}
+            <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
